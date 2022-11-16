@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  background-color: white;
+}
+
+.logo {
+  width: 200px;
+}
+
+header {
+  background-color: #363636;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 30px;
+}
+
+.menu > a {
+  text-decoration: none;
+  color: lightgray;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.menu > a:hover {
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+
+  transition-duration: 0.5s;
+}
+
+.welcome {
+  height: 100px;
+  text-align: center;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 25px;
+  line-height: 2em;
+}
+
+.categorias {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "cat-principal cat-extra";
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.cat-principal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  grid-area: cat-principal;
+  
+}
+
+.cat-principal img {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.item-principal {
+  border-radius: 10px;
+  width: 400px;
+  height: 500px;
+  cursor: pointer;
+}
+
+.item-principal:hover {
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.349);
+  transition-duration: 0.3s;
+}
+
+.cat-extra {
+  background-color: #363636;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  gap: 15px;
+  align-items: center;
+  grid-area: cat-extra;
+}
+
+.cat-extra img {
+  width: 300px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.item-extra {
+  width: 300px;
+  margin: 20px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+.item-extra:hover {
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.349);
+  transition-duration: 0.3s;
+}
+
+footer {
+  background-color: #363636;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 30px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
